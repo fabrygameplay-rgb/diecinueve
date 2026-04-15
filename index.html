@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fotos/a2298e38-0c71-4fe7-8703-a5e71f74640e.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <!--PreLayer
+
+    <div id="preShow">
+        <h1 id="mainTitle">PetWatch</h1>
+        <h2 id="mainSubtitle">Find them. Help them.</h2>
+        <button id="SignInBtn">Sign In</button>
+        <button id="logInBtn">Log In</button>
+        <button href="#">Language</button>
+        <button href="#">Options</button>
+    </div>
+
+    -->
+
+    <header>
+        <nav>
+            <img src="Fotos/a2298e38-0c71-4fe7-8703-a5e71f74640e.png" alt="icon">
+            <img src="Fotos/nombreApp.png" alt="nameApp">
+            <button id="locationButton">Location</button>
+            <input id="searchButton" type="text" placeholder="Search..."> 
+            <button id="uploadButton">Upload 📷</button>
+            <a id ="accountButton" href="user.html">Account 👤</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Aplicar carrusell por primera vez-->
+
+        <div id="sub1">
+            <h2>Last News</h2>
+        </div>
+
+        <section id ="section1">
+
+            <div>
+                <img class="news" src="Fotos/FakeNew1.jpg" alt="New1">
+                <a href="#">Read more...</a>
+            </div>
+            
+            <div>
+                <img class="news" src="Fotos/FakeNew2.jpg" alt="">
+                <a href="#">Read more...</a>
+            </div>
+            
+            <div>
+                <img class="news" src="Fotos/FakeNew3.jpg" alt="">
+                <a href="#">Read more...</a>
+            </div>
+
+            <div>
+                <img class="news" src="Fotos/FakeNew4.jpg" alt="">
+                <a href="#">Read more...</a>
+            </div>
+
+            <div>
+                <img class="news" src="Fotos/FakeNew5.png" alt="">
+                <a href="#">Read more...</a>
+            </div>
+        </section>
+
+        <article>
+            <div id="map"></div>
+        </article>
+        
+        <div id="sub2">
+            <h2>Centers nearby</h2>
+        </div>
+
+        <section id="section2">
+
+            <div id ="place1">
+                <a href="Fotos/FakePlace1.png" target="_blank"><img class="locals" src="Fotos/FakePlace1.png" alt="" ></a>
+                <div class="text">
+                    <h3>Local A</h3>
+                    <p>Ubicada en Calle Principal 14, la Clínica Huellas es un centro de 180 m² especializado en cirugía avanzada y diagnóstico digital. Con atención de urgencias 24h y modernas instalaciones, es el punto clave de respuesta médica para todos los reportes de rescate de nuestra red comunitaria.</p>
+                </div>
+            </div>
+
+            <div id ="place2">
+                <a href="Fotos/FakePlace2.png" target="_blank"><img class="locals" src="Fotos/FakePlace2.png" alt="" ></a>
+                <div class="text">
+                    <h3>Local B</h3>
+                    <p>El Hogar de Refugio Huellas es un espacio de acogida diseñado para la rehabilitación y adopción responsable. Ubicado en una amplia parcela con zonas de recreo, ofrece cuidado veterinario, entrenamiento conductual y refugio temporal seguro para animales rescatados, conectando a cada mascota con su familia ideal.</p>
+                </div>  
+            </div>
+
+            <div id ="place3">
+                <a href="Fotos/FakePlace3.png" target="_blank"><img class="locals" src="Fotos/FakePlace3.png" alt="" ></a>
+                <div class="text">
+                    <h3>Local C</h3>
+                    <p>La Unidad de Protección Animal de la Comisaría Distrito 4 es el centro operativo de seguridad y ley. Especializada en la investigación de maltrato y recuperación de animales extraviados, coordina las alertas de agresividad en tiempo real para garantizar una convivencia segura y el cumplimiento de las normas de bienestar en la comunidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+        <div id="firstAd">
+            <a href="Fotos/FakeAd1.jpeg" target="_blank"><img src="Fotos/FakeAd1.jpeg"></a>
+        </div>
+
+        <div id="secondAd">
+            <a href="Fotos/FakeAd2.jpeg "target="_blank"><img src="Fotos/FakeAd2.jpeg"></a>
+        </div>
+    </aside>
+
+    </main>
+
+<!-- barra teléfono
+
+    <nav id="navMobile">
+        <a href="index.html">Home</a>
+        <a href="alert.html">Alerts</a>
+        <a href="camera.html">Camera</a>
+        <a href="message.html">Messages</a>
+        <a href="user.html">User</a>
+    </nav>
+-->
+
+    <footer>
+        <p>Fabrizio with the "z".</p>
+    </footer>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

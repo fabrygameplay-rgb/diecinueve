@@ -1,0 +1,209 @@
+/*Desktop responsive*/
+
+@media (min-width:1080px) and (orientation: landscape) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 250px;
+        grid-template-areas: 
+        "sub1 sub1 sub1 sub1"
+        "section1 section1 section1 section1"
+        "map map map aside"
+        "map map map aside"
+        "map map map aside"
+        "sub2 sub2 sub2 ."
+        "section2 section2 section2 section2"
+    }
+    
+    header {
+        grid-area: header;
+        border-bottom: solid 2px black;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    nav img:nth-child(1) {
+        width: 70px;
+        height: 70px;
+        padding-top: 25px;
+    }
+
+    nav img:nth-child(2) {
+        width: 120px;
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    nav button {
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #locationButton {
+        color:lightseagreen;
+        background-color: white;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        width: auto;
+        height: 20px;
+        margin-top: 50px;
+    }
+
+    #searchButton {
+        display: flex;
+        color:steelblue;
+        background-color: bisque;
+        border-radius: 8px;
+        width: 550px;
+        height: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 42px;
+        margin-left: 25px;
+    }
+
+    #loop {
+        background-color:aliceblue;
+        border-radius: 18px;
+        border: solid black 1px;
+        padding: 4px;
+    }
+
+    #uploadButton {
+        color:lightseagreen;
+        background-color: white;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        width: auto;
+        height: 20px;
+        margin-top: 47px;
+        margin-left: 20px;
+    }
+
+    #accountButton {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+        width: auto;
+        height: 20px;
+        margin-top: 49px;
+        margin-left: 25px;
+    }
+
+    #section1 {
+        grid-area: section1;
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px 10px 10px 10px;
+        justify-content: space-between;
+    }
+
+    #section1 h2 {
+        display: block;
+    }
+
+    #section1 div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .news, .locals {
+        width: 200px;
+        height: 200px;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    #section2 {
+        grid-area: section2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #section2 a {
+        height: 190px;
+    }
+
+    #place1, #place2, #place3 {
+        display: flex;
+        border: solid 1px black;
+        margin: 5px 5px 5px 0px;
+        width: auto;
+        height: auto;
+    }
+
+    #section2 .text {
+        width: 180px;
+        height: 190px;
+        background-color: cornsilk;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    #section2 div h3 {
+        color:steelblue;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #section2 div p {
+        color: black;
+        text-align: justify;
+    }
+
+    #sub1 {
+        grid-area: sub1;
+    }
+    
+    #sub2 {
+        grid-area: sub2;
+    }
+
+    aside {
+        display: flex;
+        grid-area: aside;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 200px;
+        height: 604px;
+    }
+
+    #firstAd img, #secondAd img {
+        width: 200px;
+        height: 300px;
+        border: dashed dodgerblue 1px;
+    }
+
+    footer {
+        grid-area: footer;
+        color: black;
+        font-weight:bold;
+        background-color:thistle;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 0px;
+    }
+}
