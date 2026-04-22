@@ -125,10 +125,18 @@
         height: 200px;
     }
 
-    #map {
+    article {
+        grid-area: map;
+        padding: 5px;
         width: 100%;
         height: 100%;
     }
+
+    #map {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+    }      
 
     #section2 {
         grid-area: section2;
